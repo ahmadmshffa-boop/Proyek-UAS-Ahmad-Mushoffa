@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Teknologi 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <header class="main-header">
+        <h1>Event Teknologi Modern berbasis AI 2026</h1>
+        <p class="Deskripsi">Jelajahi Inovasi Terbaru & Terhubung dengan Para Ahli</p>
+    </header>
+
+    <main class="utama">
+        <section id="event-info" class="border">
+            <h2>Deskripsi Event</h2>
+            <p>Bergabunglah bersama kami dalam acara eksklusif ini untuk menggali lebih dalam tentang tren teknologi terkini, mulai dari Kecerdasan Buatan hingga Pengembangan Web Modern. Dapatkan wawasan berharga dari para pemimpin industri.</p>
+            <div class="info-grid">
+                <div>
+                    <h3><i class="icon-calendar"></i> Tanggal</h3>
+                    <p>30 Juni 2026</p>
+                </div>
+                <div>
+                    <h3><i class="icon-location"></i> Lokasi</h3>
+                    <p>Gedung Stikom El Rahma, Bogor</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel-gitudah">
+            <h2>Galeri Acara Tahun Lalu</h2>
+            <div class="carousel">
+                <div class="carousel-slide"><img src="download.jpg" alt="Foto Acara 1"></div>
+                <div class="carousel-slide"><img src="download (1).jpg" alt="Foto Acara 2"></div>
+                <div class="carousel-slide"><img src="images.jpg" alt="Foto Acara 3"></div>
+                <div class="carousel-slide"><img src="WhatsApp Image 2025-12-27 at 10.57.23 PM.jpeg" alt="Foto Acara 4"></div>
+                <div class="carousel-slide"><img src="WhatsApp Image 2026-01-11 at 1.45.41 PM.jpeg" alt="Foto Acara 5"></div>
+                <!-- di duplikatin biar bisa loop -->
+                <div class="carousel-slide"><img src="download.jpg" alt="Foto Acara 1"></div>
+                <div class="carousel-slide"><img src="download (1).jpg" alt="Foto Acara 2"></div>
+                <div class="carousel-slide"><img src="images.jpg" alt="Foto Acara 3"></div>
+                <div class="carousel-slide"><img src="WhatsApp Image 2025-12-27 at 10.57.23 PM.jpeg" alt="Foto Acara 4"></div>
+                <div class="carousel-slide"><img src="WhatsApp Image 2026-01-11 at 1.45.41 PM.jpeg" alt="Foto Acara 5"></div>
+            </div>
+        </section>
+
+
+        <section id="registration" class="border">
+            <div id="registration-header">
+                 <h2>Form Pendaftaran</h2>
+                 <p class="kuota-info">Kuota Tersedia: <span id="kuota-sisa">50</span></p>
+            </div>
+            <div id="registration-content">
+                <form id="registration-form">
+                    <div class="form">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form">
+                        <label for="no-hp">No. Handphone</label>
+                        <input type="tel" id="no-hp" name="no-hp" required>
+                    </div>
+                    <div class="form">
+                        <label for="kategori">Kategori Peserta</label>
+                        <select id="kategori" name="kategori" required>
+                            <option value=""> Kategori </option>
+                            <option value="Mahasiswa">Mahasiswa</option>
+                            <option value="Umum">Umum</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button-submit">Daftar Sekarang</button>
+                </form>
+                <p id="form-message" class="teks"></p>
+            </div>
+        </section>
+
+        <section id="participant-list-section" class="border ">
+            <h2>Peserta Terdaftar (<span id="participant-count">0</span>/50)</h2>
+            <ul id="participant-list">
+                <!-- nanti data peserta ditampilkan disini oleh java script -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;   2026 Event Teknologi. Stikom El Rahma <br>
+         Stikom El Rahma <br>
+         Jl. DR. Sumeru No.21G, RT.01/RW.08, Kb. Klp., Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16125<br>Bogor 
+    <br>Jawa Barat </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
